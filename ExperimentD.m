@@ -6,7 +6,7 @@ e = 10^(-4);
 %% Dense case
 A = randn(m, n);
 %% Computing ground truth
-x_gt = rand(n, 1);
+x_gt = randn(n, 1);
 b = A * x_gt;
 %% Solve system using Gauss_LS
 [x_G_LS_dense, log_resid_G_LS_dense, log_x_G_LS_dense, log_time_G_LS_dense, log_flops_G_LS_dense, ~] = Gauss_LS(A, b, e, 300, true);
